@@ -2,5 +2,5 @@
 sort: 1
 ---
 
-# SSBI 매뉴얼
+# SSBI-QUERY 매뉴얼
 
