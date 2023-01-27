@@ -1,11 +1,9 @@
 ---
-sort: 1
+sort: 2
 ---
 
 # SSBI 매뉴얼
 
-```
-{% raw %}{% include list.liquid all=true %}{% endraw %}
-```
+
 
 {% include list.liquid all=true %}
