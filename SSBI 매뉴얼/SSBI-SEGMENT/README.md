@@ -19,4 +19,3 @@ SSBI - SEGMENT 은 메타 데이터 기반의 셀프 서비스 분석과 레포�
 
 **SSBI - PORTAL 로그인 후 화면 중앙 SSBI - SEGMENT를 클릭하여 이동할 수 있습니다.**
 
-![ssbiportal-main](assets/images/SSBI-SEGMENT/ssbiportal-main.png)
