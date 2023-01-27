@@ -6,7 +6,7 @@ sort: 2
 
 > **소개**
 
-![image-20230127114823768](C:\Users\NATE\AppData\Roaming\Typora\typora-user-images\image-20230127114823768.png)
+![ssbiportal-main](../../assets/images/SSBI%20%EB%A7%A4%EB%89%B4%EC%96%BC%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/ssbiportal-main.png)
 
 **SSBI - PORTAL 로그인 후 화면 중앙 SSBI - SEGMENT를 클릭하여 이동할 수 있습니다.**
 
