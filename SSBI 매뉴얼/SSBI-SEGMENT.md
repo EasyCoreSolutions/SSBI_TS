@@ -6,7 +6,7 @@ sort: 2
 
 > **소개**
 
-![ssbiportal-main](/assets/images/SEGMENT MANUAL/ssbiportal-main.png)
+![image-20230127134404241](assets/images/SSBI 매뉴얼 홈페이지/image-20230127134404241.png)
 
 **SSBI - PORTAL 로그인 후 화면 중앙 SSBI - SEGMENT를 클릭하여 이동할 수 있습니다.**
 
