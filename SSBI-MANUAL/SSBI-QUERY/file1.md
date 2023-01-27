@@ -1,6 +1,3 @@
----
-sort: 1
----
 
 # SSBI-SEGMENT 소개
 
