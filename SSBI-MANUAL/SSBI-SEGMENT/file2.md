@@ -1,3 +1,3 @@
-# file2
 
+# 화면 구성
 source: `{{ page.path }}`
