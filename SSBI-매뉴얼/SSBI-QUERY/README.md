@@ -1,3 +1,3 @@
 # SSBI-QUERY
 
-Source
+source: `{{ page.path }}`
