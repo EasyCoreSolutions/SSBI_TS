@@ -4,7 +4,7 @@ sort: 2
 
 # SSBI-SEGMENT 매뉴얼
 
-> **소개 **
+> **소개**
 
 ![image-20230127114823768](C:\Users\NATE\AppData\Roaming\Typora\typora-user-images\image-20230127114823768.png)
 
