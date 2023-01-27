@@ -6,7 +6,7 @@ sort: 2
 
 > **소개**
 
-![ssbiportal-main](C:\Users\NATE\Desktop\EasyCore\SSBI\assets\images\SEGMENT MANUAL\ssbiportal-main.png)
+![ssbiportal-main](https://github.com/EasyCoreSolutions/SSBI/blob/9c04d94dbc738cf8fa36a1c02125f8b9060b66ee/assets/images/SEGMENT%20MANUAL/ssbiportal-main.png)
 
 **SSBI - PORTAL 로그인 후 화면 중앙 SSBI - SEGMENT를 클릭하여 이동할 수 있습니다.**
 
