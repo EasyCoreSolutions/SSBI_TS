@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# 폴더 메뉴 예시 
+# SSBI 매뉴얼
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}
