@@ -175,7 +175,7 @@ select a.CUST_ID as MBR_NO
 
 <p align="center"><font size="2m">고객코드, 매출일, 성별, 연령대, 등급, 복종 별 매출수량 및 매출금액</font></p>
 
-<br><br><br>
+<br><br>
 
 ### 코멘트 작성
 
@@ -186,3 +186,86 @@ select a.CUST_ID as MBR_NO
 Wirte모드에서 작성하고 프로젝트를 저장한다면 코멘트도 함께 저장되며 Preview모드에서 볼 수 있습니다.
 
 위의 메뉴를 통해 리스트나 이미지, 링크 등 다양한 형태의 코멘트를 삽입할 수 있습니다.
+
+<br><br><br>
+
+## 프롬프트 필터
+
+2019년 1월의 구매수량 30개에 따라 고객별 등급을 나누는 쿼리를 만들어본다면
+
+~~~ sql
+SELECT CUST_ID
+     , sum(SALE_QTY) as SALE_QTY
+	 , case when sum(SALE_QTY) <= 30 then 1
+	        when sum(SALE_QTY) <= 60 then 2
+	        when sum(SALE_QTY) <= 90 then 3
+	  	    when sum(SALE_QTY) <= 120 then 4
+		    when sum(SALE_QTY) <= 150 then 5
+		    else null end as GRADE
+  FROM sgdw_cust_sale_info
+ WHERE SALE_DT between 20190101 and 20190131 
+ GROUP by CUST_ID
+ ORDER by 2
+~~~
+
+이런 쿼리를 만들 수 있습니다.
+
+쿼리를 작성하려고 한다면 기본적인 SQL을 알아야 하지만
+프롬프트 필터는 쿼리를 잘 모르는사람도 QUERY-360을 사용 할 수 있도록 설정해줄 수 있습니다.
+
+먼저 우측 정보창의 필터관리를 클릭하여
+
+<center><img src="images/file1/image-20230130173058153.png" alt="image-20230130173058153" style="zoom:70%;" /></center>
+
+<p align="center"><font size="2m">프롬프트 필터 설정창</font></p>
+
+프롬프트필터를 설정할 수 있는 창이 나오는데 HTML을 입력하여 프롬프트 필터를 만들 수 있습니다. 상단의 프롬프트-템플릿의 다양한 예시를 응용하여 새로운 프롬프트 필터를 만들 수 도 있습니다. 
+
+<center><img src="images/file1/image-20230130173559112.png" alt="image-20230130173559112" style="zoom:70%;" /></center>
+
+<p align="center"><font size="2m">프롬프트 필터를 작성하고(위), 적용한모습(아래)</font></p>
+
+<center><img src="images/file1/image-20230130174045937.png" alt="image-20230130174045937"  /></center>
+
+<br>
+
+프롬프터 필터의 값을 입력할 수 있는 텍스트박스가 생성이 됩니다.
+이렇게 입력된 값을 활용하여, SQL을 작성할 수도 있습니다.
+
+~~~ sql
+  {% assign sv = ##start_value## %}   /* 시작값 */
+  {% assign ev = ##end_value##  %}   /* 종료값 */
+  {% assign mv = ##max_value##  %}   /* 최대값 */
+  {% assign  count = ##buckets## %}   /* 버켓수  */
+  {% assign  range  = mv | divided_by : count %}  /* 범위값 */
+
+
+SELECT CUST_ID
+       , sum(SALE_QTY) as SALE_QTY
+	   , case 
+{% for i in (1..count) %}
+        when sum(SALE_QTY) <= {{range}} * {{i}} then '{{i}}등급'
+{% endfor %}
+else null end as GRADE
+ FROM sgdw_cust_sale_info
+WHERE SALE_DT between {{sv}} and {{ev}}
+GROUP by CUST_ID
+ORDER by 2
+~~~
+
+상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid 입니다.
+8줄 부터 Liquid의 반복문과 변수를 활용하여 쿼리를 만들었습니다.
+
+프롬프트 입력값을 받아서 쿼리결과가 조회되는 것을 볼 수 있습니다.
+
+<center><img src="images/file1/image-20230130175542506.png" alt="image-20230130175542506" style="zoom: 46%;" /></center>
+
+쿼리를 잘 모르는 사람도 준비된 쿼리에 프롬프트 필터의 입력 값을 변경하여 결과를 조회 할 수 있습니다.
+
+<br><br><br>
+
+## 프로젝트 관리
+
+작업된 코드의 결과를 프로젝트로 저장하고 열람할 수 있게 함으로써, 다른사람과 공유하고 확인할 수 있습니다.
+
+좌측 네비게이션 바의 프로젝트 저장을 눌러 작업한 프로젝트를 저장할 수 있습니다.
