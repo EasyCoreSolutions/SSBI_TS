@@ -1,3 +1,3 @@
-# SSBI-QUERY
+# SSBI-Query
 
 source: `{{ page.path }}`

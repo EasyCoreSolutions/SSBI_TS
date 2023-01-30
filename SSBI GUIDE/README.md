@@ -1,8 +1,8 @@
 ---
-sort: 1
+sort: 2
 ---
 
-# SSBI 매뉴얼
+# SSBI 퀵가이드
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}

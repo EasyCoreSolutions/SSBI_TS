@@ -1,3 +1,3 @@
-# SSBI-SEGMENT
+# SSBI-Segment
 
 source: `{{ page.path }}`
