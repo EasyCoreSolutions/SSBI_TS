@@ -82,6 +82,101 @@ SELECT * FROM SGDW_CUST_SALE_INFO
 
 <br>
 
+~~~ note
+우클릭에서 나오는 메뉴는 SSBI Config Manager CODESUPPORT 에서 변경 할 수 있습니다.
+~~~
+
+<br>
+
+이제 본격적으로 쿼리를 작성해보겠습니다. 
+
+샘플데이터에서 2019년 매출정보에 고객정보와 상품정보를 JOIN 하여 고객번호, 매출날짜, 성별, 연령대, 고객등급, 옷의종류 별로 매출수량과 매출금액을 조회 해보겠습니다.
+
+~~~ sql
+select *
+  from sgdw_cust_sale_info a
+       left outer join sgdw_cust_mst b
+    on a.CUST_ID = b.CUST_ID
+       left outer join sgdw_style_mst c
+    on a.STYLE_CD = c.STYLE_CD
+ where a.SALE_DT between '20190101' and '20191231'
+~~~
+
+매출정보(`sgdw_cust_sale_info `) 테이블에 고객정보(`sgdw_cust_mst)` 테이블과 상품정보(`sgdw_style_mst `) 테이블을 조인시켰습니다.
+
+<br>
+
+~~~sql
+select *
+  from sgdw_cust_sale_info a
+       left outer join sgdw_cust_mst b
+    on a.CUST_ID = b.CUST_ID
+       left outer join sgdw_style_mst c
+    on a.STYLE_CD = c.STYLE_CD
+------------------변경 부분--------------------------
+       left outer join sgdw_comm_cd_info d
+    on b.GENDER_CD = d.CD
+   and d.DIV_CD = 'CM101'
+       left outer join sgdw_comm_cd_info d0
+    on b.AGE_ARP_CD = d0.CD
+   and d0.DIV_CD = 'CM102'
+       left outer join sgdw_comm_cd_info d1
+    on b.CUST_GRD_CD = d1.CD
+   and d1.DIV_CD = 'CM103'
+       left outer join sgdw_comm_cd_info d2
+    on c.ITEM_DIV_CD = d2.CD
+   and d2.DIV_CD = 'SY101'
+-----------------------------------------------------
+ where a.SALE_DT between '20190101' and '20191231'
+~~~
+
+코드로 되어있는 고객정보와 상품정보를 변환시키기 위해 코드정보(`sgdw_comm_cd_info `) 테이블을 추가적으로 조인했습니다.
+
+<br>
+
+~~~sql
+------------------변경 부분--------------------------
+select a.CUST_ID as MBR_NO
+     , a.SALE_DT
+     , a.SALE_QTY
+     , a.SALE_AMT
+     , ifnull(d.CD_NM,'미정의') as Sex
+     , ifnull(d0.CD_NM,'미정의') as Age
+     , ifnull(d1.CD_NM,'미정의') as Grade
+     , ifnull(d2.CD_NM,'미정의') as Clothes
+-----------------------------------------------------
+  from sgdw_cust_sale_info a
+       left outer join sgdw_cust_mst b
+    on a.CUST_ID = b.CUST_ID
+       left outer join sgdw_style_mst c
+    on a.STYLE_CD = c.STYLE_CD
+       left outer join sgdw_comm_cd_info d
+    on b.GENDER_CD = d.CD
+   and d.DIV_CD = 'CM101'
+       left outer join sgdw_comm_cd_info d0
+    on b.AGE_GRP_CD = d0.CD
+   and d0.DIV_CD = 'CM102'
+       left outer join sgdw_comm_cd_info d1
+    on b.CUST_GRD_CD = d1.CD
+   and d1.DIV_CD = 'CM103'
+       left outer join sgdw_comm_cd_info d2
+    on c.ITEM_DIV_CD = d2.CD
+   and d2.DIV_CD = 'SY101'
+ where a.SALE_DT between '20190101' and '20191231'
+~~~
+
+마지막으로 필요한 정보를 각 테이블에서 SELECT 하였습니다. Null 값이 있을 경우 ifnull을 이용해  ‘미정의’ 로 정의 하기로 하고 Alias를 설정해주면 쿼리가 완성되었습니다.
+
+<br>
+
+완성된 쿼리를 실행하면, 원하는 데이터가 나온 것을 볼 수 있습니다.
+
+<center><img src="images/file1/image-20230130165747193.png" alt="image-20230130165747193"  /></center>
+
+<p align="center"><font size="2m">고객코드, 매출일, 성별, 연령대, 등급, 복종 별 매출수량 및 매출금액</font></p>
+
+<br><br><br>
+
 ### 코멘트작성
 
 <br>
