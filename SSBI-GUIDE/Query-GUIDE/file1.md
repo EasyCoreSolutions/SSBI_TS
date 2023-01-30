@@ -33,7 +33,7 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
 <center><img src="images/file1/image-20230130144323402.png" alt="image-20230130144323402" style="zoom:67%;" /></center>
 
-<p align="center"><font size="2m">76번 마리아DB를 선택</fornt></p>
+<p align="center"><font size="2m">76번 마리아DB를 선택</font></p>
 
 <br>좌측 메뉴에 해당 스키마에 포함되어있는 테이블이 나오는 것을 볼 수 있으며,테이블 클릭시 테이블에 포함된 칼럼들 역시 볼 수 있습니다.
 
@@ -46,8 +46,6 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 <br><br><br>
 
 ## 쿼리 작성하기
-
----
 
 ### 에디터 작성
 
