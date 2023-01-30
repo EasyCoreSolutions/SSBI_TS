@@ -7,7 +7,7 @@ SSBI - PORTAL 로그인 하여 SSBI-Query 를 클릭하여 Query 를 시작해�
 
 <br>
 
-<center><img src="images/file1/image-20230130124804233.png" alt="image-20230130124804233" style="zoom: 50%;" /></center>
+<center><img src="images/file1/image-20230130124804233.png" alt="image-20230130124804233" style="zoom: 65%;" /></center>
 
 <br><br><br>
 
@@ -15,23 +15,23 @@ SSBI - PORTAL 로그인 하여 SSBI-Query 를 클릭하여 Query 를 시작해�
 
 SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
-<center><img src="images/file1/image-20230130130015561.png" alt="image-20230130130015561" style="zoom: 33%;" /></center>
+<center><img src="images/file1/image-20230130130015561.png" alt="image-20230130130015561" style="zoom: 40%;" /></center>
 
 <p align="center"><font size="2m">Query의 첫화면입니다</font></p>
 
-<br><br><br>
+<br>
 
 가장 먼저 해야할 일은 데이터베이스 스키마를 선택하는 것입니다.
 
-<center><img src="images/file1/image-20230130134247942.png" alt="image-20230130134247942" style="zoom:57%;" /></center>
+<center><img src="images/file1/image-20230130134247942.png" alt="image-20230130134247942" style="zoom:69%;" /></center>
 
 <p align="center"><font size="2m">다양한 데이터베이스 스키마를 선택할 수 있습니다.</font></p>
 
-<br><br><br>
+<br>
 
 샘플로 사용할 데이터가 있는 스키마를 선택하겠습니다. 
 
-<center><img src="images/file1/image-20230130144323402.png" alt="image-20230130144323402" style="zoom:67%;" /></center>
+<center><img src="images/file1/image-20230130144323402.png" alt="image-20230130144323402" style="zoom:72%;" /></center>
 
 <p align="center"><font size="2m">76번 마리아DB를 선택</font></p>
 
@@ -39,8 +39,7 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
 또한, 테이블이나 칼럼을 우클릭한다면 테이블이나 칼럼에 대한 간단한 정보나 요약을 우측 결과창에서 볼 수 있고 혹은 간단한 쿼리문을 Editor창에 바로 입력 할 수 있습니다.  <br>
 
-
-<center><img src="images/file1/image-20230130150413785.png" alt="image-20230130150413785" style="zoom: 33%;" /></center>
+<center><img src="images/file1/image-20230130150413785.png" alt="image-20230130150413785" style="zoom: 46%;" /></center>
 
 <p align="center"><font size="2m">컬럼의 간단한 정보를 조회 할 수 있습니다.</font></p>
 
@@ -52,7 +51,7 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
 데이터베이스 스키마를 선택했다면 해당 데이터베이스에서 원하는 데이터만 추출하기 위해서 에디터를 작성해야 합니다.<br>
 
-<center><img src="images/file1/image-20230130160006181.png" alt="image-20230130160006181" style="zoom: 57%;" /></center>
+<center><img src="images/file1/image-20230130160006181.png" alt="image-20230130160006181" style="zoom: 63%;" /></center>
 
 <p align="center"><font size="2m">에디터 창</font></p>
 
@@ -67,7 +66,7 @@ SELECT * FROM SGDW_CUST_SALE_INFO
 
 <br>
 
-<center><img src="images/file1/image-20230130161352008.png" alt="image-20230130161352008" style="zoom:54%;" /></center>
+<center><img src="images/file1/image-20230130161352008.png" alt="image-20230130161352008" style="zoom:64%;" /></center>
 
 <p align="center"><font size="2m">에디터 아래 쿼리결과에 테이블을 조회한 결과를 볼 수 있습니다.</font></p>
 
@@ -77,11 +76,9 @@ SELECT * FROM SGDW_CUST_SALE_INFO
 
 <br>
 
-<center><img src="images/file1/image-20230130162150956.png" alt="image-20230130162150956" style="zoom: 65%;" /></center>
+<center><img src="images/file1/image-20230130162150956.png" alt="image-20230130162150956" style="zoom: 73%;" /></center>
 
-```sql
-한번의 클릭으로 select * from sgdw_sale_info 쿼리가 입력됬다.
-```
+<p align="center"><font size="2m">한번의 클릭으로 SELECT * FROM sgdw_sale_info 쿼리가 입력되었습니다.</font></p>
 
 <br>
 
