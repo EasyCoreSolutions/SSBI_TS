@@ -233,12 +233,12 @@ SELECT CUST_ID
 
 <br>
 
-<p align="left">
+<div align="left">
   {% assign sv = ##start_value## %}   /* 시작값 */<br>
-  {% assign ev = ##end_value##  %}   /* 종료값 */<br>
-  {% assign mv = ##max_value##  %}   /* 최대값 */<br>
+  {% assign ev = ##end_value## %}   /* 종료값 */<br>
+  {% assign mv = ##max_value## %}   /* 최대값 */<br>
   {% assign  count = ##buckets## %}   /* 버켓수  */<br>
-  {% assign  range  = mv | divided_by : count %}  /* 범위값 */</p>
+  {% assign  range  = mv | divided_by : count %}  /* 범위값 */</div>
 
 ```
 SELECT CUST_ID
