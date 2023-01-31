@@ -1,7 +1,11 @@
 
 # 차트 만들기
 
-QUERY-360은 데이터 전처리가 주목적이지만 데이터를 간단한 차트로 한눈에 볼 수 있는 기능도 있습니다.
+SSBI-Query 는 데이터 전처리가 주목적이지만 데이터를 간단한 차트로 한눈에 볼 수 있는 기능도 있습니다.
+
+<br><br><br>
+
+사진 넣기
 
 <br><br><br>
 
@@ -18,6 +22,8 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 <center><img src="images/file2/image-20230131140731053.png" alt="image-20230131140731053" style="zoom: 50%;" /></center>
 
 <p align="center"><font size="2m">테이블 형식으로 추출된 데이터</font></p>
+
+<br>
 
 쿼리결과 옆 시각화 분석을 눌러서 간단하게 차트를 만들 수 있습니다.
 
@@ -42,11 +48,11 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 
 <p align="center"><font size="2m">X축에는 연령, Y축에는 고객수를 선택</font></p>
 
-
+<br>
 
 차트의 크기를 적당하게 선택하고 생성을 눌린다면 새로운 차트가 생성됩니다.
 
-
+<br>
 
 <center><img src="images/file2/image-20230131144049131.png" alt="image-20230131144049131"  /></center>
 
