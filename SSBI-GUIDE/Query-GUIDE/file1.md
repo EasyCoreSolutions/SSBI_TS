@@ -235,13 +235,11 @@ SELECT CUST_ID
 
 <br>
 
-~~~html
-  {% assign sv = ##start_value## %}  /* 시작값 */
-  {% assign ev = ##end_value##  %}   /* 종료값 */
-  {% assign mv = ##max_value##  %}   /* 최대값 */
-  {% assign  count = ##buckets## %}  /* 버켓수 */
-  {% assign  range  = mv | divided_by : count %}  /* 범위값 */
-~~~
+  {% assign sv = ##start_value## %}  - 시작값  
+  {% assign ev = ##end_value##  %}  - 종료값  
+  {% assign mv = ##max_value##  %} - 최대값  
+  {% assign  count = ##buckets## %} - 버켓수  
+  {% assign  range  = mv | divided_by : count %} - 범위값  
 
 ~~~sql
 SELECT CUST_ID
@@ -257,12 +255,26 @@ GROUP by CUST_ID
 ORDER by 2
 ~~~
 
-<br>
-
 상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid 입니다.
 8줄 부터 Liquid의 반복문과 변수를 활용하여 쿼리를 만들었습니다.
 
 프롬프트 입력값을 받아서 쿼리결과가 조회되는 것을 볼 수 있습니다.
 
+<br>
 
+<center><img src="images/file1/image-20230130175542506.png" alt="image-20230130175542506" style="zoom: 46%;" /></center>
+
+쿼리를 잘 모르는 사람도 준비된 쿼리에 프롬프트 필터의 입력 값을 변경하여 결과를 조회 할 수 있습니다.
+
+<br><br><br>
+
+
+
+## 프로젝트 관리
+
+작업된 코드의 결과를 프로젝트로 저장하고 열람할 수 있게 함으로써, 다른사람과 공유하고 확인할 수 있습니다.
+
+좌측 네비게이션 바의 프로젝트 저장을 눌러 작업한 프로젝트를 저장할 수 있습니다.
+
+<br>
 
