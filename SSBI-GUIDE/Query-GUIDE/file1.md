@@ -233,7 +233,7 @@ SELECT CUST_ID
 
 <br>
 
-<center><img src="images/file1/image-20230131123052299.png" alt="image-20230131123052299" style="zoom:67%;" /></center>
+<center><img src="images/file1/image-20230131123052299.png" alt="image-20230131123052299" style="zoom:80%;" /></center>
 
 <br>
 
@@ -260,3 +260,50 @@ SELECT CUST_ID
 
 <br>
 
+<center><img src="images/file1/image-20230131124553402.png" alt="image-20230131124553402" style="zoom:46%;" /></center>
+
+<p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
+
+<br>
+
+불러오기도 좌측 네비게이션 바의 프로젝트 열기를 눌러 다시 불러올 수 있습니다.
+
+저장했던 프로젝트들은 이름과 설명, 분류를 통해 쉽게 찾을 수 있습니다.
+
+또한, 필요없는 프로젝트들은 삭제할 수도 있습니다.
+
+<br><br><br>
+
+## 외부 CSV 파일 불러오기
+
+쿼리를 직접 입력하여 원하는 데이터를 얻을 수도 있지만 원하는 데이터가 외부에 있을 수도 있습니다.
+
+이럴때는 좌측 네비게이션의 MyFiles의 File Upload를 활용하면 됩니다.
+
+Custom Upload를 클릭하여 원하는 CSV 파일을 선택하면 됩니다.
+
+<br>
+
+<center><img src="images/file1/image-20230131130531647.png" alt="image-20230131130531647" style="zoom:50%;" /></center>
+
+<p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
+
+<br>
+
+파일을 선택하면 Fields에는 칼럼들의 목록이 뜨고 Type이 숫자인 칼럼들의 경우 Num필드로 할지 Char필드로 할지 선택 할 수 있습니다.
+
+<center><img src="images/file1/CSVUPLOAD.png" alt="CSVUPLOAD" style="zoom: 50%;" /></center>
+
+Preview에서 데이터를 미리 볼 수도 있고 데이터를 확인 후 문제가 없다면 Import를 클릭하여 파일을 가져 올 수 있습니다.
+
+업로드 한 모든 파일은 개인파일의 파일리스트에서 확인 할 수 있습니다.
+
+<br>
+
+SSBI-Query의 SQLITE-DATASET 에 테이블로 추가가 되어 활용 가능합니다.
+
+<center><img src="images/file1/image-20230131133138450.png" alt="image-20230131133138450" style="zoom:50%;" /></center>
+
+<p align="center"><font size="2m">SQLITE 데이터셋에 테이블로 추가된 CSV 파일 </font></p>
+
+<br><br><br>
