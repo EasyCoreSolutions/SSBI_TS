@@ -233,13 +233,14 @@ SELECT CUST_ID
 
 <br>
 
-  {% assign sv = ## start_value ## %}   /* 시작값 */
-  {% assign ev = ## end_value ##  %}   /* 종료값 */
-  {% assign mv = ## max_value ##  %}   /* 최대값 */
-  {% assign  count = ## buckets ## %}   /* 버켓수  */
-  {% assign  range  = mv | divided_by : count %}  /* 범위값 */
+<p align="left">
+  {% assign sv = ##start_value## %}   /* 시작값 */<br>
+  {% assign ev = ##end_value##  %}   /* 종료값 */<br>
+  {% assign mv = ##max_value##  %}   /* 최대값 */<br>
+  {% assign  count = ##buckets## %}   /* 버켓수  */<br>
+  {% assign  range  = mv | divided_by : count %}  /* 범위값 */</p>
 
-```sql
+```
 SELECT CUST_ID
        , sum(SALE_QTY) as SALE_QTY
 	   , case 
@@ -255,7 +256,7 @@ ORDER by 2
 
 <br>
 
-상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid 입니다.
+상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid문 입니다.
 8줄 부터 Liquid의 반복문과 변수를 활용하여 쿼리를 만들었습니다.
 
 프롬프트 입력값을 받아서 쿼리결과가 조회되는 것을 볼 수 있습니다.
