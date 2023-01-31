@@ -233,27 +233,7 @@ SELECT CUST_ID
 
 <br>
 
-~~~
- /* {% assign sv = start_value %}   시작값 */
- /* {% assign ev = end_value  %}    종료값 */
- /* {% assign mv = max_value  %}    최대값 */
- /* {% assign  count = buckets %}   버켓수  */
- /* {% assign  range  = mv | divided_by : count %}   범위값 */ 
-~~~
-
-```
-SELECT CUST_ID
-       , sum(SALE_QTY) as SALE_QTY
-	   , case 
-{% for i in (1..count) %}
-        when sum(SALE_QTY) <= {{range}} * {{i}} then '{{i}}등급'
-{% endfor %}
-else null end as GRADE
- FROM sgdw_cust_sale_info
-WHERE SALE_DT between {{sv}} and {{ev}}
-GROUP by CUST_ID
-ORDER by 2
-```
+<center><img src="images/file1/image-20230131123052299.png" alt="image-20230131123052299" style="zoom:67%;" /></center>
 
 <br>
 
