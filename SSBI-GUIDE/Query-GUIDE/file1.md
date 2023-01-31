@@ -236,11 +236,11 @@ SELECT CUST_ID
 <br>
 
 ~~~sql
-  {% assign sv = start_value %}   /* 시작값 */
-  {% assign ev = end_value  %}   /* 종료값 */
-  {% assign mv = max_value  %}   /* 최대값 */
-  {% assign  count = buckets %}  /* 버켓수 */
-  {% assign  range  = mv | divided_by : count %} /* 범위값 */
+  {% assign sv = start_value %}   시작값 
+  {% assign ev = end_value  %}    종료값 
+  {% assign mv = max_value  %}    최대값 
+  {% assign  count = buckets %}   버켓수 
+  {% assign  range  = mv | divided_by : count %} 범위값 
 
 SELECT CUST_ID
        , sum(SALE_QTY) as SALE_QTY
