@@ -233,7 +233,7 @@ SELECT CUST_ID
 
 <br>
 
-```Liquid
+```tip
   {% assign sv = ##start_value## %}   /* 시작값 */
   {% assign ev = ##end_value##  %}   /* 종료값 */
   {% assign mv = ##max_value##  %}   /* 최대값 */
