@@ -57,3 +57,23 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 <center><img src="images/file2/image-20230131144049131.png" alt="image-20230131144049131"  /></center>
 
 <p align="center"><font size="2m">차트를 우클릭하여 차트 설정 옵션으로 다양하게 차트를 꾸밀수 있습니다.</font></p>
+
+<br><br><br>
+
+## 동적시각화 분석
+
+동적시각화는 생성한 프로젝트에서 사용자가 **원하는필드**만 선택하여 동적으로 시각화 할 수 있게 지원합니다.
+
+시각화 기능은 차트툴과 동일합니다.
+
+<br>
+
+<center><img src="images/file2/image-20230131155140248.png" alt="image-20230131155140248"  /></center>
+
+<p align="center"><font size="2m">원하는 필드만 선택하여 차트를 구성할 수 있습니다 </font></p>
+
+<br>
+
+SSBI-Segment 와 마찬가지로 바 차트 뿐만 아니라 대략 40~50가지의 다양한 차트를 만들 수 있습니다.
+
+<br><br><br>
