@@ -233,5 +233,35 @@ SELECT CUST_ID
 프롬프트 필터의 값을 입력할 수 있는 텍스트박스가 생성이 됩니다.
 이렇게 입력된 값을 활용하여, SQL을 작성할 수도 있습니다.
 
+<br>
+
+~~~sql
+  {% assign sv = ##start_value## %}   /* 시작값 */
+  {% assign ev = ##end_value##  %}   /* 종료값 */
+  {% assign mv = ##max_value##  %}   /* 최대값 */
+  {% assign  count = ##buckets## %}   /* 버켓수  */
+  {% assign  range  = mv | divided_by : count %}  /* 범위값 */
+
+
+SELECT CUST_ID
+       , sum(SALE_QTY) as SALE_QTY
+	   , case 
+{% for i in (1..count) %}
+        when sum(SALE_QTY) <= {{range}} * {{i}} then '{{i}}등급'
+{% endfor %}
+else null end as GRADE
+ FROM sgdw_cust_sale_info
+WHERE SALE_DT between {{sv}} and {{ev}}
+GROUP by CUST_ID
+ORDER by 2
+~~~
+
+<br>
+
+상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid 입니다.
+8줄 부터 Liquid의 반복문과 변수를 활용하여 쿼리를 만들었습니다.
+
+프롬프트 입력값을 받아서 쿼리결과가 조회되는 것을 볼 수 있습니다.
+
 
 
