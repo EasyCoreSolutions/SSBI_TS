@@ -209,4 +209,23 @@ SELECT CUST_ID
  ORDER by 2
 ~~~
 
+이런 쿼리를 만들 수 있습니다.
 
+쿼리를 작성하려고 한다면 기본적인 SQL을 알아야 하지만
+프롬프트 필터는 쿼리를 잘 모르는사람도 QUERY-360을 사용 할 수 있도록 설정해줄 수 있습니다.
+
+먼저 우측 정보창의 필터관리를 클릭하여
+
+<center><img src="images/file1/image-20230130173058153.png" alt="image-20230130173058153" style="zoom:70%;" /></center>
+
+<p align="center"><font size="2m">프롬프트 필터 설정창</font></p>
+
+프롬프트필터를 설정할 수 있는 창이 나오는데 HTML을 입력하여 프롬프트 필터를 만들 수 있습니다. 상단의 프롬프트-템플릿의 다양한 예시를 응용하여 새로운 프롬프트 필터를 만들 수 도 있습니다. 
+
+<center><img src="images/file1/image-20230130173559112.png" alt="image-20230130173559112" style="zoom:70%;" /></center>
+
+<p align="center"><font size="2m">프롬프트 필터를 작성하고(위), 적용한모습(아래)</font></p>
+
+<center><img src="images/file1/image-20230130174045937.png" alt="image-20230130174045937"  /></center>
+
+<br>
