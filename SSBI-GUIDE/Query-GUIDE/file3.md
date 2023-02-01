@@ -79,14 +79,14 @@ SEGMENT-360의 System Schema나 My Schema, My Tables 에서 사용할 수 있는
 
 ## SQLITE Dateset 으로 보내기
 
-SQLITE Dataset으로 보내기는 SEGMENT-360의 데이터셋 테이블로 활용하거나 QUERY-360에서의 SQLITE-DATASET에서 활용하고 싶을때 내보내는 방법입니다.
+SQLITE Dataset으로 보내기는 SEGMENT-360의 데이터셋 테이블로 활용하거나 QUERY-360에서의 SQLITE-DATASET에서 활용하고 싶을때 내보내는 방법입니다.  
 
- 
+<br>
 
 ```warning
 SQLITE Dataset으로 보낼때는 Liquid문이 적용이 안되서 Liquid문이 없는 쿼리로 바꿔주어야 합니다.
 ```
 
-
+<br>
 
 우측의 내보내기에서 익스포트 유형을 To SQLITE Dataset 으로 변경해주고 적절한 데이터셋 명을 입력한 뒤 내보내기를 클릭합니다.
