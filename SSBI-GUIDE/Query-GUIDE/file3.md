@@ -90,3 +90,25 @@ SQLITE Dataset으로 보낼때는 Liquid문이 적용이 안되서 Liquid문이 
 <br>
 
 우측의 내보내기에서 익스포트 유형을 To SQLITE Dataset 으로 변경해주고 적절한 데이터셋 명을 입력한 뒤 내보내기를 클릭합니다.
+
+<center><img src="images/file3/Querysqlite.png" alt="Querysqlite"  /></center>
+
+<br>
+
+내보내기에 성공했다면 총 몇 개의 데이터가 저장되었는지 로그에 뜨게 됩니다.
+
+<br>
+
+<center><img src="images/file3/Querysqlite2.png" alt="Querysqlite2"  /></center>
+
+<br>
+
+SSBI-Segment 의 데이터셋(Default DB-file)에 FOLLOW_QUERY_1201이 있는 것을 볼 수 있습니다.
+
+<br>
+
+<img src="images/file3/Querysqlite3.png" alt="Querysqlite3" style="zoom:80%;" />
+
+<br>
+
+SQLITE-DATASET을 선택하면 추출한 데이터가 TABLE로 추가되어 저장된 것을 확인 할 수 있습니다.
