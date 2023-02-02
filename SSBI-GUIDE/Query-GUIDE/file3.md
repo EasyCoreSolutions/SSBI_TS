@@ -1,7 +1,7 @@
 
 # 데이터 내보내기
 
-이전 장에서 차트를 만들어 보았지만 조금 더 디테일한 차트나 스토리보드를 만들기 위해서는 SEGMENT-360같은 다른 프로그램으로 데이터를 보낼 수 있어야 합니다.
+이전 장에서 차트를 만들어 보았지만 조금 더 디테일한 차트나 스토리보드를 만들기 위해서는 SSBI-Segment 같은 다른 프로그램으로 데이터를 보낼 수 있어야 합니다.
 
 <br><br><br><br><br><br>
 
@@ -63,7 +63,7 @@ where A.Sex = '남자'
 
 <br>
 
-내보내기에 성공했다면 총 몇건의 데이터가 타겟팅 되었는지 로그에 뜨게 됩니다.
+내보내기에 성공했다면 총 몇 건의 데이터가 타겟팅 되었는지 로그에 뜨게 됩니다.
 
 <br>
 
@@ -73,13 +73,13 @@ where A.Sex = '남자'
 
 <br>
 
-SEGMENT-360의 System Schema나 My Schema, My Tables 에서 사용할 수 있는 Target Segment에 Male이 있는 것을 볼 수 있습니다.
+SSBI-Segment의 System Schema나 My Schema, My Tables 에서 사용할 수 있는 Target Segment에 Male이 있는 것을 볼 수 있습니다.
 
 <br><br><br>
 
 ## SQLITE Dateset 으로 보내기
 
-SQLITE Dataset으로 보내기는 SEGMENT-360의 데이터셋 테이블로 활용하거나 QUERY-360에서의 SQLITE-DATASET에서 활용하고 싶을때 내보내는 방법입니다.  
+SQLITE Dataset으로 보내기는 SSBI-Segment 의 데이터 셋 테이블로 활용하거나 SSBI-Query에서의 SQLITE-DATASET에서 활용하고 싶을 때 내보내는 방법입니다.  
 
 <br>
 
@@ -89,7 +89,7 @@ SQLITE Dataset으로 보낼때는 Liquid문이 적용이 안되서 Liquid문이 
 
 <br>
 
-우측의 내보내기에서 익스포트 유형을 To SQLITE Dataset 으로 변경해주고 적절한 데이터셋 명을 입력한 뒤 내보내기를 클릭합니다.
+우측의 내보내기에서 익스포트 유형을 To SQLITE Dataset 으로 변경해주고 적절한 데이터 셋 명을 입력한 뒤 내보내기를 클릭합니다.
 
 <center><img src="images/file3/Querysqlite.png" alt="Querysqlite"  /></center>
 
@@ -112,3 +112,46 @@ SSBI-Segment 의 데이터셋(Default DB-file)에 FOLLOW_QUERY_1201이 있는 �
 <br>
 
 SQLITE-DATASET을 선택하면 추출한 데이터가 TABLE로 추가되어 저장된 것을 확인 할 수 있습니다.
+
+<br><br><br>
+
+## CSV 파일로 내보내기
+
+CSV파일로 내보내기는 데이터를 확장자CSV인 엑셀파일로 만들고 싶을 때 내보내는 방법입니다.
+
+<br>
+
+<center><img src="images/file3/image-20230202114445546.png" alt="image-20230202114445546"  /></center>
+
+<br>
+
+파란색의 프로파일러 버튼을 클릭한 후
+
+<br>
+
+<center><img src="images/file3/image-20230202114931885.png" alt="image-20230202114931885"  /></center>
+
+<br>
+
+Profiler 팝업창에서 내려받기를 눌러 파일명을 입력하고 실행을 클릭합니다.
+
+성공했다면 로그에 몇 개의 데이터가 만들어졌는지 뜨게 됩니다.
+
+<br>
+
+또는
+
+<br>
+
+<center><img src="images/file3/image-20230202115747265.png" alt="image-20230202115747265"  /></center>
+
+<p align="center"><font size="2m">생성된 엑셀파일은 dataqueryserver/Directories/unload/admin 에서 확인 할 수 있습니다.</font></p>
+
+<br>
+
+우측 내보내기에서 익스포트 유형을 To CSV in Unload dir로 하여 내보내기 할 수 있습니다.
+
+<br><br><br>
+
+## Table Schema 로 내보내기
+
