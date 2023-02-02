@@ -107,8 +107,13 @@ SSBI-Segment 의 데이터셋(Default DB-file)에 FOLLOW_QUERY_1201이 있는 �
 
 <br>
 
-<img src="images/file3/Querysqlite3.png" alt="Querysqlite3" style="zoom:80%;" />
+<center><img src="images/file3/Querysqlite3.png" alt="Querysqlite3" style="zoom:80%;" /></center>
 
 <br>
 
 SQLITE-DATASET을 선택하면 추출한 데이터가 TABLE로 추가되어 저장된 것을 확인 할 수 있습니다.
+
+<br><br><br>
+
+## CSV 파일로 내보내기
+
