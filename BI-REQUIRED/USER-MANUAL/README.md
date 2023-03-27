@@ -1,5 +1,5 @@
 
-# SSBI-Segment 따라하기
+# BI-REQUIRED 따라하기
 
 source: `{{ page.path }}`
 

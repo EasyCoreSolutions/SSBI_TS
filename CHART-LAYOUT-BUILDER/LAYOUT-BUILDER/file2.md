@@ -1,4 +1,3 @@
-
-# 데이터 내보내기
+# Layout Builder 기능
 
 source: `{{ page.path }}`
