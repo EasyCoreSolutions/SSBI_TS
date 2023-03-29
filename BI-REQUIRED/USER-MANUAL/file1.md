@@ -1,309 +1,159 @@
 
-# 프로젝트 시작하기
-asdfdaf
-SSBI-Query 에서의 프로젝트는 데이터를 분석에 맞게 전처리 하여 분석툴로 내보내는 것까지를 의미합니다.
+# 리본메뉴
 
-SSBI - PORTAL 로그인 하여 SSBI-Query 를 클릭하여 Query 를 시작해봅시다.
+BI-Required의 피벗테이블 9가지 옵션에 대해 알아 봅시다.
 
-<br>
-
-<center><img src="images/file1/image-20230130124804233.png" alt="image-20230130124804233" style="zoom: 65%;" /></center>
-
-<br><br><br>
-
-## 새 프로젝트 만들기
-
-SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
-
-<center><img src="images/file1/image-20230130130015561.png" alt="image-20230130130015561" style="zoom: 40%;" /></center>
-
-<p align="center"><font size="2m">Query의 첫화면입니다</font></p>
-
-<br>
-
-가장 먼저 해야할 일은 데이터베이스 스키마를 선택하는 것입니다.
-
-<center><img src="images/file1/image-20230130134247942.png" alt="image-20230130134247942" style="zoom:69%;" /></center>
-
-<p align="center"><font size="2m">다양한 데이터베이스 스키마를 선택할 수 있습니다.</font></p>
-
-<br>
-
-샘플로 사용할 데이터가 있는 스키마를 선택하겠습니다. 
-
-<center><img src="images/file1/image-20230130144323402.png" alt="image-20230130144323402" style="zoom:72%;" /></center>
-
-<p align="center"><font size="2m">76번 마리아DB를 선택</font></p>
-
-<br>좌측 메뉴에 해당 스키마에 포함되어있는 테이블이 나오는 것을 볼 수 있으며,테이블 클릭시 테이블에 포함된 칼럼들 역시 볼 수 있습니다.
-
-또한, 테이블이나 칼럼을 우클릭한다면 테이블이나 칼럼에 대한 간단한 정보나 요약을 우측 결과창에서 볼 수 있고 혹은 간단한 쿼리문을 Editor창에 바로 입력 할 수 있습니다.  <br>
-
-<center><img src="images/file1/image-20230130150413785.png" alt="image-20230130150413785" style="zoom: 46%;" /></center>
-
-<p align="center"><font size="2m">컬럼의 간단한 정보를 조회 할 수 있습니다.</font></p>
-
-<br><br><br>
-
-## 쿼리 작성하기
-
-### 에디터 작성
-
-데이터베이스 스키마를 선택했다면 해당 데이터베이스에서 원하는 데이터만 추출하기 위해서 에디터를 작성해야 합니다.<br>
-
-<center><img src="images/file1/image-20230130160006181.png" alt="image-20230130160006181" style="zoom: 63%;" /></center>
-
-<p align="center"><font size="2m">에디터 창</font></p>
-
-<br>
-
-Editor창에 SQL 쿼리를 입력하고 실행 버튼을 눌리면 됩니다.
-간단하게 하나의 테이블을 조회해보겠습니다.
-
-~~~ sql
-SELECT * FROM SGDW_CUST_SALE_INFO 
-~~~
-
-<br>
-
-<center><img src="images/file1/image-20230130161352008.png" alt="image-20230130161352008" style="zoom:64%;" /></center>
-
-<p align="center"><font size="2m">에디터 아래 쿼리결과에 테이블을 조회한 결과를 볼 수 있습니다.</font></p>
-
-<br>
-
-쿼리는 직접 손으로 입력 할 수도 있지만, 좌측 필드영역에서 드래그앤드롭으로 테이블이나 칼럼명을 입력 할 수 있고, 우클릭에 나오는 메뉴를 통해 간단한 쿼리를 바로 입력 할 수도 있습니다.
-
-<br>
-
-<center><img src="images/file1/image-20230130162150956.png" alt="image-20230130162150956" style="zoom: 73%;" /></center>
-
-<p align="center"><font size="2m">한번의 클릭으로 SELECT * FROM sgdw_sale_info 쿼리가 입력되었습니다.</font></p>
-
-<br>
-
-~~~ note
-우클릭에서 나오는 메뉴는 SSBI Config Manager CODESUPPORT 에서 변경 할 수 있습니다.
-~~~
-
-<br>
-
-이제 본격적으로 쿼리를 작성해보겠습니다. 
-
-샘플데이터에서 2019년 매출정보에 고객정보와 상품정보를 JOIN 하여 고객번호, 매출날짜, 성별, 연령대, 고객등급, 옷의종류 별로 매출수량과 매출금액을 조회 해보겠습니다.
-
-~~~ sql
-select *
-  from sgdw_cust_sale_info a
-       left outer join sgdw_cust_mst b
-    on a.CUST_ID = b.CUST_ID
-       left outer join sgdw_style_mst c
-    on a.STYLE_CD = c.STYLE_CD
- where a.SALE_DT between '20190101' and '20191231'
-~~~
-
-매출정보(`sgdw_cust_sale_info `) 테이블에 고객정보(`sgdw_cust_mst)` 테이블과 상품정보(`sgdw_style_mst `) 테이블을 조인시켰습니다.
-
-~~~sql
-select *
-  from sgdw_cust_sale_info a
-       left outer join sgdw_cust_mst b
-    on a.CUST_ID = b.CUST_ID
-       left outer join sgdw_style_mst c
-    on a.STYLE_CD = c.STYLE_CD
-------------------변경 부분--------------------------
-       left outer join sgdw_comm_cd_info d
-    on b.GENDER_CD = d.CD
-   and d.DIV_CD = 'CM101'
-       left outer join sgdw_comm_cd_info d0
-    on b.AGE_ARP_CD = d0.CD
-   and d0.DIV_CD = 'CM102'
-       left outer join sgdw_comm_cd_info d1
-    on b.CUST_GRD_CD = d1.CD
-   and d1.DIV_CD = 'CM103'
-       left outer join sgdw_comm_cd_info d2
-    on c.ITEM_DIV_CD = d2.CD
-   and d2.DIV_CD = 'SY101'
------------------------------------------------------
- where a.SALE_DT between '20190101' and '20191231'
-~~~
-
-코드로 되어있는 고객정보와 상품정보를 변환시키기 위해 코드정보(`sgdw_comm_cd_info `) 테이블을 추가적으로 조인했습니다.
-
-<br>
-
-~~~sql
-------------------변경 부분--------------------------
-select a.CUST_ID as MBR_NO
-     , a.SALE_DT
-     , a.SALE_QTY
-     , a.SALE_AMT
-     , ifnull(d.CD_NM,'미정의') as Sex
-     , ifnull(d0.CD_NM,'미정의') as Age
-     , ifnull(d1.CD_NM,'미정의') as Grade
-     , ifnull(d2.CD_NM,'미정의') as Clothes
------------------------------------------------------
-  from sgdw_cust_sale_info a
-       left outer join sgdw_cust_mst b
-    on a.CUST_ID = b.CUST_ID
-       left outer join sgdw_style_mst c
-    on a.STYLE_CD = c.STYLE_CD
-       left outer join sgdw_comm_cd_info d
-    on b.GENDER_CD = d.CD
-   and d.DIV_CD = 'CM101'
-       left outer join sgdw_comm_cd_info d0
-    on b.AGE_GRP_CD = d0.CD
-   and d0.DIV_CD = 'CM102'
-       left outer join sgdw_comm_cd_info d1
-    on b.CUST_GRD_CD = d1.CD
-   and d1.DIV_CD = 'CM103'
-       left outer join sgdw_comm_cd_info d2
-    on c.ITEM_DIV_CD = d2.CD
-   and d2.DIV_CD = 'SY101'
- where a.SALE_DT between '20190101' and '20191231'
-~~~
-
-마지막으로 필요한 정보를 각 테이블에서 SELECT 하였습니다. Null 값이 있을 경우 ifnull을 이용해  ‘미정의’ 로 정의 하기로 하고 Alias를 설정해주면 쿼리가 완성되었습니다.
-
-<br>
-
-완성된 쿼리를 실행하면, 원하는 데이터가 나온 것을 볼 수 있습니다.
-
-<center><img src="images/file1/image-20230130165747193.png" alt="image-20230130165747193"  /></center>
-
-<p align="center"><font size="2m">고객코드, 매출일, 성별, 연령대, 등급, 복종 별 매출수량 및 매출금액</font></p>
 
 <br><br>
 
-### 코멘트 작성
+## 1. 태그
 
-에디터 작성 중에 해당 프로젝트에 대한 메모를 하고 싶을때 코멘트 기능을 사용할 수 있습니다.
+### 1)설정레이아웃보기
+### 2)상세데이터연동
+### 3)드릴리스트
+### 4)데이터셋2엑셀
+### 5)테이블2엑셀
+### 6)도움말
+     <이미지 넣어야 함>
+<br><br>
+## 2. 피버팅 설정
 
-<center><img src="images/file1/image-20230130171210555.png" alt="image-20230130171210555" style="zoom:90%;" /></center>
+### 1) 테이블숨기기(체크박스) 
+체크박스를 클릭하면 화면에 생성된 피벗테이블이 숨겨집니다.
 
-Wirte모드에서 작성하고 프로젝트를 저장한다면 코멘트도 함께 저장되며 Preview모드에서 볼 수 있습니다.
+     <이미지 넣어야 함>
 
-위의 메뉴를 통해 리스트나 이미지, 링크 등 다양한 형태의 코멘트를 삽입할 수 있습니다.
+### 2) 후포필드
+피벗테이블을 그릴 수 있는 후보 필드(열) 들의 모음입니다. 마우스 드래그로 사용자가 원하는 필드를 '세로필드' 혹은 '가로필드'에 드래그 하여 피벗테이블에 나타 낼 수 있습니다. 문자형으로 구분된 필드들만 위치 시킬 수 있습니다.
 
-<br><br><br>
+    <이미지 넣어야 함>
 
+### 3) 세로필드
+피벗테이블의 세로에 표현될 필드 들을 위치시키는 공간 입니다. '후보필드' 에서 사용자가 원하는 필드를 마우스 드래그로 이동 시킬 수 있으며, 최대 2개 필드만 들어가고 마우스 드래그로 이동된 필드들 의 순서를 바꿀 수 있습니다. 후보필드에서 문자형으로 구분된 필드들만 위치 시킬 수 있습니다.
 
-## 프롬프트 필터
+    <이미지 넣어야 함>
 
-2019년 1월의 구매수량 30개에 따라 고객별 등급을 나누는 쿼리를 만들어본다면
+### 4) 가로필드
+피벗테이블의 가로에 표현될 필드 들을 위치시키는 공간 입니다. '후보필드' 에서 사용자가 원하는 필드를 마우스 드래그로 이동 시킬 수 있으며, 최대 2개 필드만 들어가고 마우스 드래그로 이동된 필드들 의 순서를 바꿀 수 있습니다. 후보필드에서 '문자형'으로 구분된 필드들만 위치 시킬 수 있습니다.
 
-~~~ sql
-SELECT CUST_ID
-     , sum(SALE_QTY) as SALE_QTY
-	 , case when sum(SALE_QTY) <= 30 then 1
-	        when sum(SALE_QTY) <= 60 then 2
-	        when sum(SALE_QTY) <= 90 then 3
-	  	    when sum(SALE_QTY) <= 120 then 4
-		    when sum(SALE_QTY) <= 150 then 5
-		    else null end as GRADE
-  FROM sgdw_cust_sale_info
- WHERE SALE_DT between 20190101 and 20190131 
- GROUP by CUST_ID
- ORDER by 2
-~~~
+    <이미지 넣어야 함>
 
-이런 쿼리를 만들 수 있습니다.
+### 5) 분석필드
+피벗테이블의 값을 표현 시킬 필드 들을 위치시키는 공간 입니다. '후보필드' 에서 사용자가 원하는 필드를 마우스 드래그로 이동 시킬 수 있으며, 최대 2개 필드만 들어가고 마우스 드래그로 이동된 필드들 의 순서를 바꿀 수 있습니다. 후보필드에서 '숫자형'으로 구분된 필드들만 위치 시킬 수 있습니다.
 
-쿼리를 작성하려고 한다면 기본적인 SQL을 알아야 하지만
-프롬프트 필터는 쿼리를 잘 모르는사람도 QUERY-360을 사용 할 수 있도록 설정해줄 수 있습니다.
+    <이미지 넣어야 함>
 
-먼저 우측 정보창의 필터관리를 클릭하여
+### 6) 테이블 테마
+피벗테이블의 테마를 변경 할 수 있습니다. 현재는 'ghostwhite', 'lightblue', 'lightgray' 3가지 테마만 지원 합니다.
 
-<center><img src="images/file1/image-20230130173058153.png" alt="image-20230130173058153" style="zoom:70%;" /></center>
-
-<p align="center"><font size="2m">프롬프트 필터 설정창</font></p>
-
-프롬프트필터를 설정할 수 있는 창이 나오는데 HTML을 입력하여 프롬프트 필터를 만들 수 있습니다. 상단의 프롬프트-템플릿의 다양한 예시를 응용하여 새로운 프롬프트 필터를 만들 수 도 있습니다. 
-
-<center><img src="images/file1/image-20230130173559112.png" alt="image-20230130173559112" style="zoom:70%;" /></center>
-
-<p align="center"><font size="2m">프롬프트 필터를 작성하고(위), 적용한모습(아래)</font></p>
-
-<center><img src="images/file1/image-20230130174045937.png" alt="image-20230130174045937"  /></center>
-
-<br>
-
-프롬프트 필터의 값을 입력할 수 있는 텍스트박스가 생성이 됩니다.
-이렇게 입력된 값을 활용하여, SQL을 작성할 수도 있습니다.
-
-<br>
-
-<center><img src="images/file1/image-20230131123052299.png" alt="image-20230131123052299" style="zoom:80%;" /></center>
-
-<br>
-
-상위 5줄은 Prompt_filter로 받은 변수를 정의해주는 Liquid문 입니다.
-8줄 부터 Liquid의 반복문과 변수를 활용하여 쿼리를 만들었습니다.
-
-프롬프트 입력값을 받아서 쿼리결과가 조회되는 것을 볼 수 있습니다.
-
-<br>
-
-<center><img src="images/file1/image-20230130175542506.png" alt="image-20230130175542506" style="zoom: 46%;" /></center>
-
-쿼리를 잘 모르는 사람도 준비된 쿼리에 프롬프트 필터의 입력 값을 변경하여 결과를 조회 할 수 있습니다.
-
-<br><br><br>
+<br><br>
+## 3. 합계옵션
+합계 옵션은 피벗테이블의 합계를 화면에 표기합니다.
 
 
+### 1) 소계보이기 
+피벗테이블의 '가로필드'에 좌측에 놓인 필드의 부분합을 해당 필드 위에 표기 합니다.
+    
+    <이미지 넣어야 함>
 
-## 프로젝트 관리
+### 2) 전체합 보이기 
+피벗테이블의 최상단에 전체합계를 표기합니다.
+    
+    <이미지 넣어야 함>
 
-작업된 코드의 결과를 프로젝트로 저장하고 열람할 수 있게 함으로써, 다른사람과 공유하고 확인할 수 있습니다.
+### 3) 컬럼합 보이기 
+피벗테이블의 '세로필드'에 놓인 필드들의 부분합을 표기 합니다.
+    
+    <이미지 넣어야 함>
 
-좌측 네비게이션 바의 프로젝트 저장을 눌러 작업한 프로젝트를 저장할 수 있습니다.
+<br><br>
+## 4. 조건선택
 
-<br>
+### 1) 수치필드 
+피벗테이블의 '분석필드'에 적용한 숫자형 필드 중, 사용자가 조건을 주고자 하는 필드를 선택합니다.
+    
+    <이미지 넣어야 함>
 
-<center><img src="images/file1/image-20230131124553402.png" alt="image-20230131124553402" style="zoom:46%;" /></center>
+### 2) 조건
+상위 20%, 상위 10%, 상위20개, 상위10개, 하위10개, 하위20개, 하위 10%, 하위 20%, 직접입력 으로 사용자가 콤보박스에서 지정한 조건으로 피벗테이블의 값을 선택 합니다. '직접'에서 부등호("=",">",">=","<","<=","<>",Between(포함),Between(제외)) 를 사용자가 지정 할 수 있습니다. '입력'에서 사용자가 원하는 부등호와 수치 값을 입력하여, 조건을 지정 할 수 있습니다. '적용' 버튼을 눌러 생성한 조건을 적용 시킵니다. '내용지우기' 버튼을 눌러 조건을 지정하기 전으로 초기화 시킵니다.
+    
+    <이미지 넣어야 함>
 
-<p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
+<br><br>
+## 5. 조건부 포메팅 
 
-<br>
+### 1) 수치필드 
+피벗테이블의 '분석필드'에 놓인 필드중, 사용자가 조건을 주고자 하는 필드를 선택 합니다.
 
-불러오기도 좌측 네비게이션 바의 프로젝트 열기를 눌러 다시 불러올 수 있습니다.
+      <이미지 넣어야 함>
 
-저장했던 프로젝트들은 이름과 설명, 분류를 통해 쉽게 찾을 수 있습니다.
+### 2) 타입
+'바챠트','힙맵','아이콘' 세 개 중 조건을 주고자하는 콤보 박스의 옵션을 선택 합니다.
 
-또한, 필요없는 프로젝트들은 삭제할 수도 있습니다.
+      <이미지 넣어야 함>
 
-<br><br><br>
+### 2-1) 색상
+2번의 타입에서 '바차트' 혹은 '힙맵'으로 지정 하면, 피벗테이블에 그려질 바챠트 힙맵의 색깔을 지정 합니다.
 
-## 외부 CSV 파일 불러오기
+      <이미지 넣어야 함>
 
-쿼리를 직접 입력하여 원하는 데이터를 얻을 수도 있지만 원하는 데이터가 외부에 있을 수도 있습니다.
+### 2-2) 아이콘
+2번의 타입에서 '아이콘' 으로 지정하면, '3 star', '4circles', 'Blue 4 circles', '5 Arrow', 'Blue 5 Arrow' 중 사용자가 원하는 옵션의 아이콘 모양을 피벗테이블에 적용 합니다.
 
-이럴때는 좌측 네비게이션의 MyFiles의 File Upload를 활용하면 됩니다.
+      <이미지 넣어야 함>
 
-Custom Upload를 클릭하여 원하는 CSV 파일을 선택하면 됩니다.
+<br><br>
+## 6. 퍼센트 옵션
 
-<br>
+### 1) 수치필드 
+피벗테이블의 '분석필드'에 놓인 필드중, 사용자가 조건을 주고자 하는 필드를 선택 합니다.
 
-<center><img src="images/file1/image-20230131130531647.png" alt="image-20230131130531647" style="zoom:50%;" /></center>
+      <이미지 넣어야 함>
 
-<p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
+### 2) 옵션
+        => Percent(%): 전체합 : 표의 상단에 전체 합의 %를 표시합니다. 전체 합의 비율을 표시합니다.
+        => Percent(%): 열(Row) => ?열이 아니라 행? 각 열마다의 비율을 표시합니다
+        => Percent(%): 열(Row)부분합 : 해당 필드의 값을 100%로 변환 합니다.
+        => Percent(%): 컬럼합 "전체 합계" 와 해당 필드의 %를 표시합니다.
+        .00 : 소숫점 자리 수를 지정 합니다.
+        (%) : 해당 필드의 비율옆에 표기할 텍스트를 표시합니다.
 
-<br>
+      <이미지 넣어야 함>
 
-파일을 선택하면 Fields에는 칼럼들의 목록이 뜨고 Type이 숫자인 칼럼들의 경우 Num필드로 할지 Char필드로 할지 선택 할 수 있습니다.
+<br><br>
+## 7. 슬라이서 셋팅
 
-<center><img src="images/file1/CSVUPLOAD.png" alt="CSVUPLOAD" style="zoom: 50%;" /></center>
+### 1) 슬라이서 위치
+슬라이서 위치를 "숨기기","좌측위치","우측위치","상단위치","하단위치" 에 배치 할 수 있게 합니다.
+      
+      <이미지 넣어야 함>
 
-Preview에서 데이터를 미리 볼 수도 있고 데이터를 확인 후 문제가 없다면 Import를 클릭하여 파일을 가져 올 수 있습니다.
+### 2) 후포필드
+슬라이서를 생성할 필드들의 목록을 선택 할 수 있습니다.
 
-업로드 한 모든 파일은 개인파일의 파일리스트에서 확인 할 수 있습니다.
+<br><br>
+## 8. 정렬
 
-<br>
+### 1) 필드 콤보박스
+정렬할 필드를 선택합니다.
 
-SSBI-Query의 SQLITE-DATASET 에 테이블로 추가가 되어 활용 가능합니다.
+### 2) 정렬순서
+정렬순서를 정합니다.
 
-<center><img src="images/file1/image-20230131133138450.png" alt="image-20230131133138450" style="zoom:50%;" /></center>
+<br><br>
+## 9. 차트리스트
 
-<p align="center"><font size="2m">SQLITE 데이터셋에 테이블로 추가된 CSV 파일 </font></p>
+### 1) 차트 추가모드
+콤보박스를 클릭하면 콤보박스를 통하여, 사용자가 원하는 그래프를 대쉬보드에 표시 할 수 있습니다.
 
-<br><br><br>
+## 2) 챠트 제거 
+가장 최근에 생성했던 챠트 먼저 삭제 합니다.
+
+<br><br>
+## 10. 필드목록
+
+### 1) 동적실행
+사용자가 필드를 마우스로 옴기는 동시에 그래프에 바로 적용됩니다.
+
+### 2) 필드목록
+대시보드에 그려질 그래프의 필드를 정합니다. 필드목록은 2번 피버팅 설정과 공유됩니다(데모이후 확인필요)
