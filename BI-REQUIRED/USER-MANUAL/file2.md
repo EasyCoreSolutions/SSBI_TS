@@ -19,7 +19,6 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 
 <br>
 
-<center><img src="images/file2/image-20230131140731053.png" alt="image-20230131140731053" style="zoom: 50%;" /></center>
 
 <p align="center"><font size="2m">테이블 형식으로 추출된 데이터</font></p>
 
@@ -29,7 +28,6 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 
 <br>
 
-<center><img src="images/file2/image-20230131142546398.png" alt="image-20230131142546398" style="zoom: 50%;" /></center>
 
 <p align="center"><font size="2m">우측에 퀵차트메뉴(파란박스)와 차트툴(빨간박스)</font></p>
 
@@ -44,7 +42,6 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 
 <br>
 
-<center><img src="images/file2/image-20230131143459497.png" alt="image-20230131143459497" style="zoom:80%;" /></center>
 
 <p align="center"><font size="2m">X축에는 연령, Y축에는 고객수를 선택</font></p>
 
@@ -53,8 +50,6 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 차트의 크기를 적당하게 선택하고 생성을 눌린다면 새로운 차트가 생성됩니다.
 
 <br>
-
-<center><img src="images/file2/image-20230131144049131.png" alt="image-20230131144049131"  /></center>
 
 <p align="center"><font size="2m">차트를 우클릭하여 차트 설정 옵션으로 다양하게 차트를 꾸밀수 있습니다.</font></p>
 
@@ -68,9 +63,7 @@ SSBI-Query 에서도 간단하게 차트를 만들어 데이터의 대략적인 
 
 <br>
 
-<center><img src="images/file2/image-20230131155140248.png" alt="image-20230131155140248"  /></center>
 
-<p align="center"><font size="2m">원하는 필드만 선택하여 차트를 구성할 수 있습니다 </font></p>
 
 <br>
 

@@ -7,7 +7,6 @@ SSBI - PORTAL 로그인 하여 SSBI-Query 를 클릭하여 Query 를 시작해�
 
 <br>
 
-<center><img src="images/file1/image-20230130124804233.png" alt="image-20230130124804233" style="zoom: 65%;" /></center>
 
 <br><br><br>
 
@@ -15,7 +14,6 @@ SSBI - PORTAL 로그인 하여 SSBI-Query 를 클릭하여 Query 를 시작해�
 
 SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
-<center><img src="images/file1/image-20230130130015561.png" alt="image-20230130130015561" style="zoom: 40%;" /></center>
 
 <p align="center"><font size="2m">Query의 첫화면입니다</font></p>
 
@@ -23,7 +21,6 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
 가장 먼저 해야할 일은 데이터베이스 스키마를 선택하는 것입니다.
 
-<center><img src="images/file1/image-20230130134247942.png" alt="image-20230130134247942" style="zoom:69%;" /></center>
 
 <p align="center"><font size="2m">다양한 데이터베이스 스키마를 선택할 수 있습니다.</font></p>
 
@@ -31,15 +28,12 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 
 샘플로 사용할 데이터가 있는 스키마를 선택하겠습니다. 
 
-<center><img src="images/file1/image-20230130144323402.png" alt="image-20230130144323402" style="zoom:72%;" /></center>
-
 <p align="center"><font size="2m">76번 마리아DB를 선택</font></p>
 
 <br>좌측 메뉴에 해당 스키마에 포함되어있는 테이블이 나오는 것을 볼 수 있으며,테이블 클릭시 테이블에 포함된 칼럼들 역시 볼 수 있습니다.
 
 또한, 테이블이나 칼럼을 우클릭한다면 테이블이나 칼럼에 대한 간단한 정보나 요약을 우측 결과창에서 볼 수 있고 혹은 간단한 쿼리문을 Editor창에 바로 입력 할 수 있습니다.  <br>
 
-<center><img src="images/file1/image-20230130150413785.png" alt="image-20230130150413785" style="zoom: 46%;" /></center>
 
 <p align="center"><font size="2m">컬럼의 간단한 정보를 조회 할 수 있습니다.</font></p>
 
@@ -50,8 +44,6 @@ SSBI-Query 에 들어온다면 자동으로 새 프로젝트가 시작됩니다.
 ### 에디터 작성
 
 데이터베이스 스키마를 선택했다면 해당 데이터베이스에서 원하는 데이터만 추출하기 위해서 에디터를 작성해야 합니다.<br>
-
-<center><img src="images/file1/image-20230130160006181.png" alt="image-20230130160006181" style="zoom: 63%;" /></center>
 
 <p align="center"><font size="2m">에디터 창</font></p>
 
@@ -66,7 +58,6 @@ SELECT * FROM SGDW_CUST_SALE_INFO
 
 <br>
 
-<center><img src="images/file1/image-20230130161352008.png" alt="image-20230130161352008" style="zoom:64%;" /></center>
 
 <p align="center"><font size="2m">에디터 아래 쿼리결과에 테이블을 조회한 결과를 볼 수 있습니다.</font></p>
 
@@ -75,8 +66,6 @@ SELECT * FROM SGDW_CUST_SALE_INFO
 쿼리는 직접 손으로 입력 할 수도 있지만, 좌측 필드영역에서 드래그앤드롭으로 테이블이나 칼럼명을 입력 할 수 있고, 우클릭에 나오는 메뉴를 통해 간단한 쿼리를 바로 입력 할 수도 있습니다.
 
 <br>
-
-<center><img src="images/file1/image-20230130162150956.png" alt="image-20230130162150956" style="zoom: 73%;" /></center>
 
 <p align="center"><font size="2m">한번의 클릭으로 SELECT * FROM sgdw_sale_info 쿼리가 입력되었습니다.</font></p>
 
@@ -169,7 +158,6 @@ select a.CUST_ID as MBR_NO
 
 완성된 쿼리를 실행하면, 원하는 데이터가 나온 것을 볼 수 있습니다.
 
-<center><img src="images/file1/image-20230130165747193.png" alt="image-20230130165747193"  /></center>
 
 <p align="center"><font size="2m">고객코드, 매출일, 성별, 연령대, 등급, 복종 별 매출수량 및 매출금액</font></p>
 
@@ -179,7 +167,6 @@ select a.CUST_ID as MBR_NO
 
 에디터 작성 중에 해당 프로젝트에 대한 메모를 하고 싶을때 코멘트 기능을 사용할 수 있습니다.
 
-<center><img src="images/file1/image-20230130171210555.png" alt="image-20230130171210555" style="zoom:90%;" /></center>
 
 Wirte모드에서 작성하고 프로젝트를 저장한다면 코멘트도 함께 저장되며 Preview모드에서 볼 수 있습니다.
 
@@ -214,17 +201,14 @@ SELECT CUST_ID
 
 먼저 우측 정보창의 필터관리를 클릭하여
 
-<center><img src="images/file1/image-20230130173058153.png" alt="image-20230130173058153" style="zoom:70%;" /></center>
 
 <p align="center"><font size="2m">프롬프트 필터 설정창</font></p>
 
 프롬프트필터를 설정할 수 있는 창이 나오는데 HTML을 입력하여 프롬프트 필터를 만들 수 있습니다. 상단의 프롬프트-템플릿의 다양한 예시를 응용하여 새로운 프롬프트 필터를 만들 수 도 있습니다. 
 
-<center><img src="images/file1/image-20230130173559112.png" alt="image-20230130173559112" style="zoom:70%;" /></center>
 
 <p align="center"><font size="2m">프롬프트 필터를 작성하고(위), 적용한모습(아래)</font></p>
 
-<center><img src="images/file1/image-20230130174045937.png" alt="image-20230130174045937"  /></center>
 
 <br>
 
@@ -233,7 +217,6 @@ SELECT CUST_ID
 
 <br>
 
-<center><img src="images/file1/image-20230131123052299.png" alt="image-20230131123052299" style="zoom:80%;" /></center>
 
 <br>
 
@@ -244,7 +227,6 @@ SELECT CUST_ID
 
 <br>
 
-<center><img src="images/file1/image-20230130175542506.png" alt="image-20230130175542506" style="zoom: 46%;" /></center>
 
 쿼리를 잘 모르는 사람도 준비된 쿼리에 프롬프트 필터의 입력 값을 변경하여 결과를 조회 할 수 있습니다.
 
@@ -260,7 +242,6 @@ SELECT CUST_ID
 
 <br>
 
-<center><img src="images/file1/image-20230131124553402.png" alt="image-20230131124553402" style="zoom:46%;" /></center>
 
 <p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
 
@@ -284,7 +265,6 @@ Custom Upload를 클릭하여 원하는 CSV 파일을 선택하면 됩니다.
 
 <br>
 
-<center><img src="images/file1/image-20230131130531647.png" alt="image-20230131130531647" style="zoom:50%;" /></center>
 
 <p align="center"><font size="2m">네비게이션바의 프로젝트 저장을 눌러 팝업띄우기</font></p>
 
@@ -292,7 +272,6 @@ Custom Upload를 클릭하여 원하는 CSV 파일을 선택하면 됩니다.
 
 파일을 선택하면 Fields에는 칼럼들의 목록이 뜨고 Type이 숫자인 칼럼들의 경우 Num필드로 할지 Char필드로 할지 선택 할 수 있습니다.
 
-<center><img src="images/file1/CSVUPLOAD.png" alt="CSVUPLOAD" style="zoom: 50%;" /></center>
 
 Preview에서 데이터를 미리 볼 수도 있고 데이터를 확인 후 문제가 없다면 Import를 클릭하여 파일을 가져 올 수 있습니다.
 
@@ -302,7 +281,6 @@ Preview에서 데이터를 미리 볼 수도 있고 데이터를 확인 후 문�
 
 SSBI-Query의 SQLITE-DATASET 에 테이블로 추가가 되어 활용 가능합니다.
 
-<center><img src="images/file1/image-20230131133138450.png" alt="image-20230131133138450" style="zoom:50%;" /></center>
 
 <p align="center"><font size="2m">SQLITE 데이터셋에 테이블로 추가된 CSV 파일 </font></p>
 

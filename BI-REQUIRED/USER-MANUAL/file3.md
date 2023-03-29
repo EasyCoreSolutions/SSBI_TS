@@ -57,8 +57,6 @@ where A.Sex = '남자'
 
 <br>
 
-<center><img src="images/file3/SSBI_TARGETLIST.png" alt="SSBI_TARGETLIST"  /></center>
-
 <p align="center"><font size="2m">로그에 레코드가 만들어졌다면, 내보내기 완료</font></p>
 
 <br>
@@ -66,8 +64,6 @@ where A.Sex = '남자'
 내보내기에 성공했다면 총 몇 건의 데이터가 타겟팅 되었는지 로그에 뜨게 됩니다.
 
 <br>
-
-<center><img src="images/file3/QUERY_TARGETLIST.png" alt="QUERY_TARGETLIST"  /></center>
 
 <p align="center"><font size="2m">Male 세그먼트가 추가된 것을 볼 수 있습니다</font></p>
 
@@ -91,7 +87,6 @@ SQLITE Dataset으로 보낼때는 Liquid문이 적용이 안되서 Liquid문이 
 
 우측의 내보내기에서 익스포트 유형을 To SQLITE Dataset 으로 변경해주고 적절한 데이터 셋 명을 입력한 뒤 내보내기를 클릭합니다.
 
-<center><img src="images/file3/Querysqlite.png" alt="Querysqlite"  /></center>
 
 <br>
 
@@ -99,7 +94,6 @@ SQLITE Dataset으로 보낼때는 Liquid문이 적용이 안되서 Liquid문이 
 
 <br>
 
-<center><img src="images/file3/Querysqlite2.png" alt="Querysqlite2"  /></center>
 
 <br>
 
@@ -107,7 +101,6 @@ SSBI-Segment 의 데이터셋(Default DB-file)에 FOLLOW_QUERY_1201이 있는 �
 
 <br>
 
-<center><img src="images/file3/Querysqlite3.png" alt="Querysqlite3" style="zoom:80%;" /></center>
 
 <br>
 
@@ -121,7 +114,6 @@ CSV파일로 내보내기는 데이터를 확장자CSV인 엑셀파일로 만들
 
 <br>
 
-<center><img src="images/file3/image-20230202114445546.png" alt="image-20230202114445546"  /></center>
 
 <br>
 
@@ -129,7 +121,6 @@ CSV파일로 내보내기는 데이터를 확장자CSV인 엑셀파일로 만들
 
 <br>
 
-<center><img src="images/file3/image-20230202114931885.png" alt="image-20230202114931885"  /></center>
 
 <br>
 
@@ -143,7 +134,6 @@ Profiler 팝업창에서 내려받기를 눌러 파일명을 입력하고 실행
 
 <br>
 
-<center><img src="images/file3/image-20230202115747265.png" alt="image-20230202115747265"  /></center>
 
 <p align="center"><font size="2m">생성된 엑셀파일은 dataqueryserver/Directories/unload/admin 에서 확인 할 수 있습니다.</font></p>
 
