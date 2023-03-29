@@ -6,6 +6,7 @@ BI-Required의 피벗테이블 9가지 옵션에 대해 알아 봅시다.
 <리본메뉴>
 
 
+<img src ='C:/Users/Easycore/Desktop/bi_required 메뉴얼 이미지깃에적용될 이미지/리본메뉴.jpg'></img>
 
 * * *
 <br><br>
