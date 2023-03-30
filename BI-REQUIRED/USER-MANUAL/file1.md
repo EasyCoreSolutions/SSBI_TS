@@ -109,6 +109,7 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 **<컬럼합 보이기 옵션 적용>**
 ![합계옵션_컬럼합 보이기](https://user-images.githubusercontent.com/42717821/228728002-15185c71-b7be-43d1-8905-63ad73d85df8.JPG)
 
+
 * * *
 <br><br>
 
