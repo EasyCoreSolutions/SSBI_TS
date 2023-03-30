@@ -106,9 +106,7 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 <미적용 피벗테이블>
 ![합계옵션_미적용테이블](https://user-images.githubusercontent.com/42717821/228726649-fc65346e-ecd4-419d-9e12-221a073a8e81.JPG)
 
-**<컬럼합 보이기 옵션 적용>**
-![합계옵션_컬럼합 보이기](https://user-images.githubusercontent.com/42717821/228728002-15185c71-b7be-43d1-8905-63ad73d85df8.JPG)
-test
+
 
 * * *
 <br><br>
