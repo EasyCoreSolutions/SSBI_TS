@@ -68,7 +68,7 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 
 ![피버팅 설정_테이블 테마](https://user-images.githubusercontent.com/42717821/228709585-06bc4e2c-0eec-4c66-bd43-0c8846bbd74f.JPG)
 
-완성된 피벗테이블 사진(임시)
+**완성된 피벗테이블 사진(임시)**
 ![피버팅 설정_임시완성테이블](https://user-images.githubusercontent.com/42717821/228710479-8ab22606-3ba0-4d4e-8c2a-c082df5423b0.JPG)
 
 
@@ -81,18 +81,34 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 
 ### 1) 소계보이기 
 피벗테이블의 '가로필드'에 좌측에 놓인 필드의 부분합을 해당 필드 위에 표기 합니다.
-    
-    <이미지 넣어야 함>
+
+<미적용 피벗테이블>
+![합계옵션_미적용테이블](https://user-images.githubusercontent.com/42717821/228726649-fc65346e-ecd4-419d-9e12-221a073a8e81.JPG)
+
+**<소계 보이기 옵션 적용>**
+![합계옵션_소계적용](https://user-images.githubusercontent.com/42717821/228727047-041a3bda-2e46-4ba1-8b32-cff8126c3e31.JPG)
+
+
 
 ### 2) 전체합 보이기 
 피벗테이블의 최상단에 전체합계를 표기합니다.
     
-    <이미지 넣어야 함>
+<미적용 피벗테이블>
+![합계옵션_미적용테이블](https://user-images.githubusercontent.com/42717821/228726649-fc65346e-ecd4-419d-9e12-221a073a8e81.JPG)
+
+**<전체합 보이기 옵션 적용>**
+![합계옵션_전체합보이기](https://user-images.githubusercontent.com/42717821/228727587-500dca24-f59a-4935-ba85-6ba2b0a10a82.JPG)
+
 
 ### 3) 컬럼합 보이기 
 피벗테이블의 '세로필드'에 놓인 필드들의 부분합을 표기 합니다.
     
-    <이미지 넣어야 함>
+<미적용 피벗테이블>
+![합계옵션_미적용테이블](https://user-images.githubusercontent.com/42717821/228726649-fc65346e-ecd4-419d-9e12-221a073a8e81.JPG)
+
+**<컬럼합 보이기 옵션 적용>**
+![합계옵션_컬럼합 보이기](https://user-images.githubusercontent.com/42717821/228728002-15185c71-b7be-43d1-8905-63ad73d85df8.JPG)
+
 * * *
 <br><br>
 
