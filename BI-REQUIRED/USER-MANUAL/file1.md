@@ -133,9 +133,12 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 ![조건선택_조건직접입력](https://user-images.githubusercontent.com/42717821/228734489-a4895251-8352-483f-b3c5-1e6effcfc97e.JPG)
 
 조건선택 전 피벗테이블
+
 ![조건선택_select 전](https://user-images.githubusercontent.com/42717821/228736553-593de603-19dc-42a1-ae7a-5fc61208b8ec.JPG)
 
+
 상위 10개 옵션으로 조건을 셀렉한 피벗테이블(검정색으로 덧칠 됨)
+
 ![조건선택_select_후](https://user-images.githubusercontent.com/42717821/228736717-6c006d61-c2b0-4c0d-a1af-0703c0866d91.JPG)
 * * *
 <br><br>
@@ -145,22 +148,35 @@ report에 사용된 내용을 엑셀로 받을 수 있습니다.
 ### 1) 수치필드 
 피벗테이블의 '분석필드'에 놓인 필드중, 사용자가 조건을 주고자 하는 필드를 선택 합니다.
 
-      <이미지 넣어야 함>
+![조건선택_수치필드](https://user-images.githubusercontent.com/42717821/228734085-c3659ab5-bf3a-45f5-8e1d-7a8e2f99d4af.JPG)
 
 ### 2) 타입
 '바챠트','힙맵','아이콘' 세 개 중 조건을 주고자하는 콤보 박스의 옵션을 선택 합니다.
 
-      <이미지 넣어야 함>
+![조건부포메팅_타입](https://user-images.githubusercontent.com/42717821/228738753-375e03a3-7655-435a-a33b-6d97c7b1c26d.JPG)
 
 ### 2-1) 색상
 2번의 타입에서 '바차트' 혹은 '힙맵'으로 지정 하면, 피벗테이블에 그려질 바챠트 힙맵의 색깔을 지정 합니다.
 
-      <이미지 넣어야 함>
+![조건부포메팅_색상](https://user-images.githubusercontent.com/42717821/228739003-c8ed7319-4b0b-4d70-a8b2-ff4e3ec66ac0.JPG)
 
 ### 2-2) 아이콘
 2번의 타입에서 '아이콘' 으로 지정하면, '3 star', '4circles', 'Blue 4 circles', '5 Arrow', 'Blue 5 Arrow' 중 사용자가 원하는 옵션의 아이콘 모양을 피벗테이블에 적용 합니다.
 
-      <이미지 넣어야 함>
+![조건부포메팅_아이콘](https://user-images.githubusercontent.com/42717821/228739186-635935bc-13e4-4080-ac88-252081243e12.JPG)
+
+조건부포메팅_바타입
+
+![조건부포메팅 바타입_3](https://user-images.githubusercontent.com/42717821/228739836-12c88d6c-71b2-41bd-b422-c87f3310886b.JPG)
+
+조건부포메팅_힙맵
+
+![조건부포메팅 힙맵3](https://user-images.githubusercontent.com/42717821/228740335-8b9d8217-b54b-4205-a8df-b0cd61421bd4.JPG)
+
+조건부포메팅_아이콘
+
+![조건부포메팅 아이콘3](https://user-images.githubusercontent.com/42717821/228740762-8cfb4787-0c34-4ffb-8dd3-343be558eff2.JPG)
+
 * * *
 <br><br>
 
