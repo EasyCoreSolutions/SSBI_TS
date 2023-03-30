@@ -3,7 +3,13 @@
 
 BI-Required의 피벗테이블 9가지 옵션에 대해 알아 봅시다.
 
-![test](./img/리본메뉴.JPG)
+리본 메뉴란 BI-Required의 우측 상단에
+
+![리본메뉴 진입버튼](https://user-images.githubusercontent.com/42717821/228703427-f6b27160-7e78-4f19-bb9d-5eb8a8fb30b3.JPG)
+
+버튼을 누르면 아래 사진 처럼 9가지의 메뉴가 나옵니다.
+
+![리본메뉴](https://user-images.githubusercontent.com/42717821/228703196-617cd4e4-c1a9-4bff-989d-7e006e7e5665.JPG)
 * * *
 <br><br>
 
