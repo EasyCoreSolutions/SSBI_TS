@@ -1,5 +1,5 @@
-# BI-REQUIRED! 
+# CHART-LAYOUT-BUILDER 
 
-  "BI-REQUIRED!" 는 웹애플리케이션의 데이터분석 역량을 강화합니다  .
-  "작은 크기의 자바스크립트 엔진은 강력한 분석 기능을 제공합니다."
+  "CHART-LAYOUT-BUILDER" 다양한 차트를 사용자화하는 기능을 제공합니다.
+  
 
