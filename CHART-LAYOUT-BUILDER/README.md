@@ -1,5 +1,5 @@
 ---
-sort: 2
+sort: 1
 ---
 
 # Chart-Layout-Builder 매뉴얼
