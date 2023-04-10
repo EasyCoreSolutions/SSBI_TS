@@ -94,4 +94,10 @@ Chart Layout Builder 의 상세기능에 대해서 알아 봅시다.
 
 <br>
 
-### 5. 신규 탭
+### 5. 신규 탭 & 탭삭제
+
+![image-20230410150314078](images/file2/image-20230410150314078.png)
+
+![img](images/file2/clip_image002-1681106602922-12.gif)   신규탭 : 대시보드에 새 탭을 추가합니다. 탭 수정과 기능은 같습니다.<br>
+
+![img](images/file2/clip_image004.gif)   탭삭제 : 테이블 대시보드의 탭을 삭제할 수 있는 기능입니다.<br>
