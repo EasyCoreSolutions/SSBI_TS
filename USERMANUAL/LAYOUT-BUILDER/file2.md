@@ -19,7 +19,7 @@ Chart Layout Builder 의 상세기능에 대해서 알아 봅시다.
 
 우측상단의 차트툴로 다양한 차트를 사용자에 맞게끔 설정할 수있고, 우측에는 레이아웃빌더의 기능의 핵심인 대시보드 레이아웃을 JSON 형태로 추출되는 코드박스가 있습니다.
 
-![image-20230410120148814](images/file2/image-20230410120148814.png)
+<center><img src="images/file2/image-20230410120148814.png" alt="image-20230410120148814"  /></center>
 
 <p align="center"><font size="2m">다양한 차트툴 기능으로 대시보드를 사용자화 할 수 있습니다.</font></p>
 
