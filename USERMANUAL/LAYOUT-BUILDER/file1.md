@@ -1,7 +1,7 @@
 
 # Layout Builder 주요기능
 
-Layout Buidler 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
+Layout Builder 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
 
 1. 차트를 사용자화하여 구성하는 기능<br>
 2. 구성된 차트 레이아웃을 JSON 형태로 내보내는 기능<br>
@@ -17,3 +17,4 @@ Layout Buidler 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
 ![image-20230411135039842](images/file1/image-20230411135039842.png)
 
 <a href="/CHART-LAYOUT-BUILDER/USERMANUAL/LAYOUT-BUILDER/">차트툴 사용법링크 테스트</a>
+
