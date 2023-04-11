@@ -2,8 +2,9 @@
 
 ---
 
-Chart Layout Builder 의 상세기능에 대해서 알아 봅시다.
-<br>상세기능을 알아보기전 간단하게 화면에 대해 알아보겠습니다.
+Chart Layout Builder 툴박스를 다양한 차트를 사용자화 할 수 있습니다.<br>
+
+상세기능을 알아보기전 간단하게 화면에 대해 알아보겠습니다.<br>
 
 <br><br><br>
 
@@ -29,7 +30,7 @@ Chart Layout Builder 의 상세기능에 대해서 알아 봅시다.
 
 <br>
 
-<center><img src="images/file2/image-20230410120148814.png" alt="image-20230410120148814"  /></center>
+<center><img src="images/file2/image-20230411114916573.png" alt="image-20230411114916573" /></center>
 
 <p align="center"><font size="2m">다양한 차트툴 기능으로 대시보드를 사용자화 할 수 있습니다.</font></p>
 
