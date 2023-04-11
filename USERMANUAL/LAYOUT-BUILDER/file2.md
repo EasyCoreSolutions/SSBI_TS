@@ -30,7 +30,7 @@ Chart Layout Builder 툴박스를 다양한 차트를 사용자화 할 수 있�
 
 <br>
 
-<center><img src="images/file2/image-20230411114916573.png" alt="image-20230411114916573" /></center>
+<center><img src="images/file2/image-20230411120152523.png" alt="image-20230411120152523" /></center>
 
 <p align="center"><font size="2m">다양한 차트툴 기능으로 대시보드를 사용자화 할 수 있습니다.</font></p>
 
