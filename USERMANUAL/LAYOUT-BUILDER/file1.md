@@ -24,7 +24,7 @@ Layout Builder 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
 
 크기, 색상, 관점등 세부옵션을 설정할 수도 있고, 퀵차트 메뉴를 통해 빠른 차트 구성이 가능합니다<br>
 
-<a href="file2.html#차트툴">_*차트툴 사용법 바로가기*_</a>를 통해 차트 구성을 시작해보세요! <br>
+<a href="file2.html#차트툴">__*차트툴 사용법 바로가기*__</a>를 통해 차트 구성을 시작해보세요! <br>
 
 <br>
 <br>
@@ -41,7 +41,7 @@ Layout Builder 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
 
 추출한 레이아웃은 **"BI-REQUIRED"** 에서 활용할 수 있습니다.
 
-<a href="file3.html">_*Layout Builder 활용하기*_</a>를 통해 **"BI-REQUIRED"**에서 고급분석을 시작해보세요! <br>
+<a href="file3.html">__*Layout Builder 활용하기*__</a>를 통해 **"BI-REQUIRED"**에서 고급분석을 시작해보세요! <br>
 
 <br>
 <br>
