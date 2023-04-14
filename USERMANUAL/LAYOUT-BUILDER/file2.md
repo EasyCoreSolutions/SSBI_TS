@@ -1,14 +1,16 @@
 # Layout Builder 툴박스기능
 
----
+<br>
 
 Chart Layout Builder 툴박스를 다양한 차트를 사용자화 할 수 있습니다.<br>
 
 상세기능을 알아보기전 간단하게 화면에 대해 알아보겠습니다.<br>
 
-<br><br><br>
+<br>
 
 ---
+
+<br>
 
 ## 화면설명
 
