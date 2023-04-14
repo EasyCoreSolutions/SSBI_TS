@@ -16,5 +16,5 @@ Layout Builder 는 크게 2가지의 기능으로 나뉘어져 있습니다.<br>
 
 ![image-20230411135039842](images/file1/image-20230411135039842.png)
 
-<a href="CHART-LAYOUT-BUILDER/USERMANUAL/LAYOUT-BUILDER/file2.html#차트툴">차트툴 사용법링크 테스트</a>
+<a href="CHART-LAYOUT-BUILDER/USERMANUAL/LAYOUT-BUILDER/#차트툴">차트툴 사용법링크 테스트</a>
 
