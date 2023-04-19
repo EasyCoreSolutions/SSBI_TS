@@ -88,4 +88,5 @@ Get 버튼을 눌러 추출한 레이아웃 코드는 아래 코드블럭처럼 
 
 "BI-REQUIRED" 의 설정파일옵션 또는 사용법은 "BI-REQUIRED" 매뉴얼 페이지에서 확인 할 수 있습니다.
 
-<a href="BIREQUIRED/README.md">__*"BI-REQUIRED" 매뉴얼 페이지*__</a>
+<a href="/BIREQUIRED/">__*"BI-REQUIRED" 매뉴얼 페이지*__</a>
+
