@@ -72,8 +72,15 @@ Get 버튼을 눌러 추출한 레이아웃 코드는 아래 코드블럭처럼 
 }
 ```
 
-추출된 레이아웃 코드를 아래 그림처럼 "BI-REQUIRED" 설정파일의 탭 부분에 적용해 봅시다.
+차트 레이아웃 JSON 코드는 "BI-REQUIRED" 의 설정파일 탭부분에 맞도록 되어있습니다.
 
 ![image-20230414155336140](images/file3/image-20230414155336140.png)
 
 <p align="center"><font size="2m">차트레이아웃 코드(좌측) 설정파일(우측)</font></p>
+
+추출된 차트 레이아웃 코드를 아래 그림처럼 "BI-REQUIRED" 설정파일의 탭 부분에 적용해 봅시다.
+
+![image-20230419105504996](images/file3/image-20230419105504996.png)
+
+<p align="center"><font size="2m">파이차트와, 그룹바차트가 적용된 BI-REQUIRED의 화면</font></p>
+
