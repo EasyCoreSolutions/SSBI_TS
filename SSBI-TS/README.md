@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# BI-REQUIRED 사용자 메뉴얼
+# SSBI-TS
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}

@@ -1,5 +1,5 @@
 
-# BI-REQUIRED 따라하기
+# SSBI-WEB
 
 source: `{{ page.path }}`
 

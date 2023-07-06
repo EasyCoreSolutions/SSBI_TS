@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Chart-Layout-Builder 매뉴얼
+# SSBI-QUERYSERVER
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}

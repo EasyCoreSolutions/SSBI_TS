@@ -1,3 +1,3 @@
-# Layout Builder 기능
+# SSBI-QUERYSERVER
 
 source: `{{ page.path }}`
